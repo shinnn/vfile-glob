@@ -1,0 +1,42 @@
+{
+	"name": "vfile-glob",
+	"version": "1.0.0",
+	"description": "Search files with glob pattern and create VFile objects from them",
+	"repository": "shinnn/vfile-glob",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"pretest": "eslint --fix --format=codeframe .",
+		"test": "nyc --reporter=text --reporter=html node test.js"
+	},
+	"license": "ISC",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"file",
+		"files",
+		"virtual",
+		"vfile",
+		"glob",
+		"pattern",
+		"search",
+		"match",
+		"read",
+		"async",
+		"asynchronous",
+		"observable"
+	],
+	"dependencies": {
+		"read-glob": "^3.0.0",
+		"vfile": "^2.3.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^5.0.0",
+		"eslint": "^4.19.1",
+		"nyc": "^11.6.0",
+		"tape": "^4.9.0"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
+}
